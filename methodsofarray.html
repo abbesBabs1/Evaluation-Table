@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h3 id="display"></h3> -->
+    <!-- <script>
+        var friuts = ["Banana", "Orange", "Apple", "Mango"]
+        var foods = ["Rice", "indomie","yam"]
+        var arr2 = ["Emil", "Tobias", "Linus"]
+        display.innerHTML = friuts.toString()
+        display.innerHTML = friuts.join("-")
+        display.innerHTML = friuts;
+        friuts.pop()
+        friuts.push("cherry")
+        display.innerHTML = friuts;
+        friuts.shift()
+        friuts.unshift("Lemon")
+        friuts[0]= "Watermelon"
+        friuts.splice(2,0, "Lemon","cherry")
+        friuts.splice(0,1)
+        var citrus = friuts.slice(2)
+        display.innerHTML = citrus;
+        var items = foods.concat(friuts,arr2)
+        display.innerHTML = items
+    </script> -->
+
+
+    <h2 id="disp"></h2>
+    <h2 id="disp2"></h2>
+    <button onclick="pop()">pop()</button>
+    <input type="text" name="" id="addMe" placeholder="Enter a value  to add"><button onclick="push()">push()</button>
+    <button onclick="sort()">sort()</button>
+    <button onclick="reverse()">reverse()</button>
+    <script>
+        var friuts = ["Banana", "Orange", "Apple", "Mango"]
+        disp.innerHTML = friuts;
+
+        function pop() {
+            friuts.pop()
+            disp2.innerHTML = friuts;
+
+        }
+        function push() {
+            friuts.push(addMe.value)
+            disp2.innerHTML = friuts;
+        }
+        function sort(){
+            friuts.sort()
+            disp2.innerHTML = friuts;
+        }
+        function reverse(){
+            friuts.reverse()
+            disp2.innerHTML = friuts;
+        }
+       
+    </script>
+</body>
+
+</html>
